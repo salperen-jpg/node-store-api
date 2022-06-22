@@ -4,6 +4,7 @@ const connectDB = require('./db/connect');
 // dotenv
 require('dotenv').config();
 // async errors
+require('express-async-errors');
 
 const notFound = require('./middleware/not-found');
 const errorMiddleware = require('./middleware/error-handler');
